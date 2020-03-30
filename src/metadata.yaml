@@ -1,0 +1,27 @@
+name: flaskapp
+summary: flask app with postgresql db
+maintainer: Jesse <jesse1517@gmail.com>
+description: |
+  flaskapp
+tags:
+  - flask
+  - webapp
+subordinate: false
+series:
+  - bionic
+  - xenial
+provides:
+  http:
+    interface: http
+  db:
+    interface: pgsql
+  db-admin:
+    interface: pgsql
+requires:
+  postgresql:
+    interface: pgsql
+resources:
+  flasksnap:
+    type: file
+    filename: flasksnap.snap
+    description: flasksnap snap

@@ -1,0 +1,10 @@
+includes:
+  - 'layer:basic'
+  - 'layer:snap'
+  - 'interface:http'
+  - 'interface:pgsql'
+
+options:
+  snap:
+    flasksnap:
+      dangerous: true
