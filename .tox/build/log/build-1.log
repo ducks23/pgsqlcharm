@@ -1,0 +1,68 @@
+action: build, msg: getenv
+cwd: /home/jesse/mycharms/flask_charm
+cmd: /home/jesse/mycharms/flask_charm/.tox/build/bin/python -m pip install -r/home/jesse/mycharms/flask_charm/requirements/test-requirements.txt
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. A future version of pip will drop support for Python 2.7. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Collecting flake8
+  Using cached flake8-3.7.9-py2.py3-none-any.whl (69 kB)
+Collecting pytest
+  Using cached pytest-4.6.9-py2.py3-none-any.whl (231 kB)
+Collecting pycodestyle
+  Using cached pycodestyle-2.5.0-py2.py3-none-any.whl (51 kB)
+Collecting tox
+  Using cached tox-3.14.6-py2.py3-none-any.whl (81 kB)
+Collecting typing; python_version < "3.5"
+  Using cached typing-3.7.4.1-py2-none-any.whl (26 kB)
+Collecting entrypoints<0.4.0,>=0.3.0
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting mccabe<0.7.0,>=0.6.0
+  Using cached mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting pyflakes<2.2.0,>=2.1.0
+  Using cached pyflakes-2.1.1-py2.py3-none-any.whl (59 kB)
+Processing /home/jesse/.cache/pip/wheels/c2/ea/a3/25af52265fad6418a74df0b8d9ca8b89e0b3735dbd4d0d3794/functools32-3.2.3.post2-py2-none-any.whl
+Collecting enum34; python_version < "3.4"
+  Using cached enum34-1.1.10-py2-none-any.whl (11 kB)
+Collecting configparser; python_version < "3.2"
+  Using cached configparser-4.0.2-py2.py3-none-any.whl (22 kB)
+Collecting attrs>=17.4.0
+  Using cached attrs-19.3.0-py2.py3-none-any.whl (39 kB)
+Collecting atomicwrites>=1.0
+  Using cached atomicwrites-1.3.0-py2.py3-none-any.whl (5.9 kB)
+Collecting pluggy<1.0,>=0.12
+  Using cached pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting six>=1.10.0
+  Using cached six-1.14.0-py2.py3-none-any.whl (10 kB)
+Collecting packaging
+  Using cached packaging-20.3-py2.py3-none-any.whl (37 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Using cached importlib_metadata-1.6.0-py2.py3-none-any.whl (30 kB)
+Collecting py>=1.5.0
+  Using cached py-1.8.1-py2.py3-none-any.whl (83 kB)
+Collecting more-itertools<6.0.0,>=4.0.0; python_version <= "2.7"
+  Using cached more_itertools-5.0.0-py2-none-any.whl (52 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
+Collecting funcsigs>=1.0; python_version < "3.0"
+  Using cached funcsigs-1.0.2-py2.py3-none-any.whl (17 kB)
+Collecting pathlib2>=2.2.0; python_version < "3.6"
+  Using cached pathlib2-2.3.5-py2.py3-none-any.whl (18 kB)
+Collecting toml>=0.9.4
+  Using cached toml-0.10.0-py2.py3-none-any.whl (25 kB)
+Processing /home/jesse/.cache/pip/wheels/66/13/60/ef107438d90e4aad6320e3424e50cfce5e16d1e9aad6d38294/filelock-3.0.12-cp27-none-any.whl
+Collecting virtualenv!=20.0.0,!=20.0.1,!=20.0.2,!=20.0.3,!=20.0.4,!=20.0.5,!=20.0.6,!=20.0.7,>=16.0.0
+  Using cached virtualenv-20.0.15-py2.py3-none-any.whl (4.6 MB)
+Collecting pyparsing>=2.0.2
+  Using cached pyparsing-2.4.6-py2.py3-none-any.whl (67 kB)
+Collecting contextlib2; python_version < "3"
+  Using cached contextlib2-0.6.0.post1-py2.py3-none-any.whl (9.8 kB)
+Collecting zipp>=0.5
+  Using cached zipp-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Processing /home/jesse/.cache/pip/wheels/91/95/75/19c98a91239878abbc7c59970abd3b4e0438a7dd5b61778335/scandir-1.10.0-cp27-cp27mu-linux_x86_64.whl
+Collecting importlib-resources<2,>=1.0; python_version < "3.7"
+  Using cached importlib_resources-1.4.0-py2.py3-none-any.whl (20 kB)
+Collecting appdirs<2,>=1.4.3
+  Using cached appdirs-1.4.3-py2.py3-none-any.whl (12 kB)
+Processing /home/jesse/.cache/pip/wheels/6e/e8/db/c73dae4867666e89ba3cfbc4b5c092446f0e584eda6f409cbb/distlib-0.3.0-cp27-none-any.whl
+Collecting singledispatch; python_version < "3.4"
+  Using cached singledispatch-3.4.0.3-py2.py3-none-any.whl (12 kB)
+Installing collected packages: typing, configparser, entrypoints, mccabe, pyflakes, pycodestyle, functools32, enum34, flake8, attrs, atomicwrites, contextlib2, zipp, scandir, six, pathlib2, importlib-metadata, pluggy, pyparsing, packaging, py, more-itertools, wcwidth, funcsigs, pytest, toml, filelock, singledispatch, importlib-resources, appdirs, distlib, virtualenv, tox
+Successfully installed appdirs-1.4.3 atomicwrites-1.3.0 attrs-19.3.0 configparser-4.0.2 contextlib2-0.6.0.post1 distlib-0.3.0 entrypoints-0.3 enum34-1.1.10 filelock-3.0.12 flake8-3.7.9 funcsigs-1.0.2 functools32-3.2.3.post2 importlib-metadata-1.6.0 importlib-resources-1.4.0 mccabe-0.6.1 more-itertools-5.0.0 packaging-20.3 pathlib2-2.3.5 pluggy-0.13.1 py-1.8.1 pycodestyle-2.5.0 pyflakes-2.1.1 pyparsing-2.4.6 pytest-4.6.9 scandir-1.10.0 singledispatch-3.4.0.3 six-1.14.0 toml-0.10.0 tox-3.14.6 typing-3.7.4.1 virtualenv-20.0.15 wcwidth-0.1.9 zipp-1.2.0

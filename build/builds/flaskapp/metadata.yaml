@@ -1,0 +1,27 @@
+"name": "flaskapp"
+"summary": "flask app with postgresql db"
+"maintainer": "Jesse <jesse1517@gmail.com>"
+"description": |
+  flaskapp
+"tags":
+- "flask"
+- "webapp"
+"series":
+- "bionic"
+- "xenial"
+"requires":
+  "postgresql":
+    "interface": "pgsql"
+"provides":
+  "http":
+    "interface": "http"
+  "db":
+    "interface": "pgsql"
+  "db-admin":
+    "interface": "pgsql"
+"resources":
+  "flasksnap":
+    "type": "file"
+    "filename": "flasksnap.snap"
+    "description": "flasksnap snap"
+"subordinate": !!bool "false"
