@@ -20,6 +20,7 @@ def set_available():
     open_port(port)
     log(f"port {port} opened")
     set_flag('flaskapp.port-8080-opened') 
+    status_set('active', 'snap installed')
 
 
 @when('postgresql.connected')
@@ -37,18 +38,11 @@ def create_and_config_db():
     pgsql = endpoint_from_flag('postgresql.master.available')
     render(
         source='text-file.tmpl',
-        target='/var/snap/myflask/common/config/text-file.txt',
+        target='/var/snap/flasksnap/common/config/text-file.txt',
         owner='root',
         perms=0o775,
         context={'db': pgsql.master}
     )
-    render(
-        source='text-file.tmpl',
-        target='/root/text-file.txt',
-        owner='root',
-        perms=0o775,
-        context={'db': pgsql.master}
-        )
     set_flag('flaskapp.db_configured')
     db = pgsql.master
  #   URI_STRING = "postgresql://{}:{}@localhost{}/{}".format(str(db.user), str(db.password), str(db.name))
@@ -56,10 +50,11 @@ def create_and_config_db():
   #  check_call("snap set flasksnap snap.mode='apples'".split())
     status_set('active', 'Ready: file rendered')
 
-@when('config.changed')
+@when_file_changed('/var/snap/flasksnap/common/config/text-file.txt')
 @when('flaskapp.db_configured')
 @when_not('flasksnap.restarted')
 def restart_snap():
-    service_stop(snap.flasksnap.flasksnap)
-    service_start(snap.flasksnap.flasksnap)
+    service_stop('flasksnap.snap')
+    service_start('flasksnap.snap')
     set_flag('flasksnap.restarted')
+    status_set('active', 'snap reset lets party')

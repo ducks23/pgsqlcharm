@@ -5,7 +5,7 @@
       "url": "layer:options"
     },
     {
-      "rev": "46413ae6494d4805bdea61d97ce16ff8b9fd7717",
+      "rev": "5b126e8c220889dac72339c37291eff0a5e49538",
       "url": "layer:basic"
     },
     {
@@ -13,7 +13,7 @@
       "url": "layer:snap"
     },
     {
-      "rev": "07a93fa05b689c665cea41d9b45588801cbfe29d",
+      "rev": "46bc634367d79e8bbefaecae261a5707d729f541",
       "url": "flaskapp"
     },
     {
@@ -35,6 +35,11 @@
       "layer:snap",
       "static",
       "cafb5f0bc3ca8e22ee6736efd09046d3cb0634908d64294dc48fa504c9316126"
+    ],
+    ".travis/profile-update.yaml": [
+      "layer:basic",
+      "static",
+      "731e20aa59bf61c024d317ad630e478301a9386ccc0afe56e6c1c09db07ac83b"
     ],
     "LICENSE": [
       "layer:basic",
@@ -349,7 +354,7 @@
     "lib/charms/layer/basic.py": [
       "layer:basic",
       "static",
-      "8945da4f4516f9e4b6da1420df155c218f127eb23a8469b3faff9a07237e34b0"
+      "c75559891c37755032d796cfcf322a30299cc4ca9a7dd8356c7da5c30b647ea1"
     ],
     "lib/charms/layer/execd.py": [
       "layer:basic",
@@ -379,7 +384,7 @@
     "reactive/app.py": [
       "flaskapp",
       "static",
-      "a2f3c1410eba051b574d3d0db7e33f936a4692ddf0b33f34a8f32ddcb74f7d59"
+      "9cba7a1e0f682e27236ae219178ae0c4007511409b4a70af905df1fad8a1d8f9"
     ],
     "reactive/snap.py": [
       "layer:snap",
@@ -404,7 +409,7 @@
     "version": [
       "flaskapp",
       "dynamic",
-      "9cd86e80ffeca3e3686df1c0617ad6b147416e97d6e3a583d04ee0b73cb5fbe3"
+      "d5172ff0124c8aa79529ffc69d38172dbe9589d9e9bf687e1efd3a50a800fd33"
     ],
     "wheelhouse/Jinja2-2.10.1.tar.gz": [
       "layer:basic",
@@ -446,10 +451,10 @@
       "dynamic",
       "c0a292bd977ef590379a3f05d7b7f65135487b67470f6281289a94e015650ea1"
     ],
-    "wheelhouse/pyaml-20.3.1.tar.gz": [
+    "wheelhouse/pyaml-20.4.0.tar.gz": [
       "layer:basic",
       "dynamic",
-      "9914879e6ac5cbf09b8cd5d3ba09e241ffcfd91c689cddc8d8b66a68c1c7e640"
+      "29a5c2a68660a799103d6949167bd6c7953d031449d08802386372de1db6ad71"
     ],
     "wheelhouse/setuptools-41.6.0.zip": [
       "layer:basic",

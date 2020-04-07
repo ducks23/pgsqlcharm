@@ -1,7 +1,7 @@
 action: build, msg: getenv
 cwd: /home/jesse/mycharms/flask_charm/.tox
 cmd: /usr/bin/python -m virtualenv --no-download --python /usr/bin/python build
-created virtual environment CPython2.7.17.final.0-64 in 610ms
+created virtual environment CPython2.7.17.final.0-64 in 518ms
   creator CPython2Posix(dest=/home/jesse/mycharms/flask_charm/.tox/build, clear=False, global=False)
   seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/home/jesse/.local/share/virtualenv/seed-app-data/v1)
   activators PythonActivator,CShellActivator,FishActivator,PowerShellActivator,BashActivator
